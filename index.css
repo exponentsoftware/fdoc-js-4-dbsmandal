@@ -93,6 +93,39 @@ ul {
         text-decoration: none;
         font-weight: bold;
     }
+  
 
 
 }
+/* abut section */
+
+/* .about-section{
+    background-color: aqua;
+} */
+.about-section h1, p{
+    text-align: center;
+    
+}
+.about-section img{
+    max-width: 100%;
+    height: auto;
+}
+.about-image{
+    height: auto;
+    width: max-content;
+}
+.icon-div{
+    display: flex;
+    gap: 1rem;
+    place-content: center;
+}
+.icon-div img {
+    height: 40px;
+    width: 40px;
+    border-radius: 2rem;
+
+}
+
+
+
+
