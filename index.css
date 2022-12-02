@@ -93,32 +93,72 @@ ul {
         text-decoration: none;
         font-weight: bold;
     }
-  
+
+    .card-div {
+        display: none;
+
+    }
+
+    .card-div-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+
+    }
 
 
 }
+
+@media screen and (max-width:1024px) {
+    .card-div {
+        display: none;
+    }
+
+    .card-div-mobile {
+        display: none;
+    }
+
+    .card-div-small-screen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        place-items: center;
+
+    }
+
+}
+
 /* abut section */
 
 /* .about-section{
     background-color: aqua;
 } */
-.about-section h1, p{
+.about-section h1,
+p {
     text-align: center;
-    
+
 }
-.about-section img{
+
+.about-section img {
     max-width: 100%;
     height: auto;
 }
-.about-image{
+
+.about-image {
     height: auto;
     width: max-content;
 }
-.icon-div{
+
+.icon-div {
     display: flex;
     gap: 1rem;
     place-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 .icon-div img {
     height: 40px;
     width: 40px;
@@ -127,5 +167,67 @@ ul {
 }
 
 
+/* myprojects section */
+.myProjects {
+    background-color: rgb(249, 249, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.myProjects h1 {
+    text-align: center;
+
+}
+
+.card-div {
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    gap: 4px;
+    place-items: center;
+    place-content: center;
+}
+
+.card {
+    background-color: aliceblue;
+    height: 350px;
+    width: 300px;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-top: 5px;
+    border: 10px solid rgb(93, 93, 97);
+    border-radius: 10px;
+}
+
+.card-contnet h3,
+p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 20px;
 
 
+}
+
+.btn-div a button {
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+    width: 90px;
+    font-size: medium;
+    border-radius: 10px;
+
+}
